@@ -5,14 +5,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Construyendo..."
-                git 'https://github.com/Sergioocarmonaaa/primer_reposiorio.git'
             }
         }
 
         stage('Test') {
             steps {
                 echo "Ejecutando pruebas..."
-                sh 'python -m unittest -q'
+                bat 'python -m unittest -q'
             }
         }
 
