@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Ejecutando pruebas..."
-                bat 'python -m unittest -q'
+                bat '"C:\\Users\\Usuario\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m unittest -q'
             }
         }
 
